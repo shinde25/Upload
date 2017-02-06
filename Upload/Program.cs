@@ -11,10 +11,12 @@ namespace Upload
 {
     class Program
     {
+        
         static string FtpUrl;//= "ftp://192.168.1.173/TEST1/";
         static string fileName1;// = @"C:\Users\dm413\Desktop\Amit\FTP UPLOAD FOLDER\AB.txt";
         FileStream fs = null;
         Stream rs = null;
+        
 
 
 
@@ -167,6 +169,7 @@ namespace Upload
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
+                Console.WriteLine("Hello");
             }
             return ResponseDescription;
         }
